@@ -1,0 +1,14 @@
+%YAML:1.0
+Panoptic_Model: YOSO #Mask2Former #PanopticFPN
+
+PanopticFPN:
+  MODEL_PATH: "detectron2://COCO-PanopticSegmentation/panoptic_fpn_R_50_3x/139514569/model_final_c10459.pkl"
+  CONFIG: "config/PanopticFPN/panoptic_fpn_R_50_3x.yaml"
+
+YOSO:
+  MODEL_PATH: "pretrain/yoso_res50_coco.pth"
+  CONFIG: "config/YOSO/yoso_r50.yaml"
+
+Mask2Former:
+  MODEL_PATH: "pretrain/mask2former_res50_coco.pkl"
+  CONFIG: "config/Mask2Former/mask2former_r50.yaml"
