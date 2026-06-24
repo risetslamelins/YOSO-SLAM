@@ -1,5 +1,6 @@
 # YOSO-SLAM
-
+Develope by RISET SLAM ELINS UGM
+evalution and analysis submitted to JOIV : International Journal on Informatics Visualization
 
 ## License
 YOSO-SLAM is released under a GPLv3 License.
