@@ -1,5 +1,7 @@
 # YOSO-SLAM
-Develope by RISET SLAM ELINS UGM
+Developed by RISET SLAM ELINS UGM
+Departement Computer Science and Electronics
+Universitas Gadjah Mada
 Electronics and Instrumentation
 
 
