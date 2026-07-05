@@ -1,7 +1,7 @@
 # YOSO-SLAM
 Develope by RISET SLAM ELINS UGM
 Electronics and Instrumentation
-evaluation and analysis submitted to JOIV : International Journal on Informatics Visualization
+
 
 ## License
 YOSO-SLAM is released under a GPLv3 License.
