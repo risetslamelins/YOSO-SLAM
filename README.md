@@ -78,3 +78,23 @@ python associate.py PATH_TO_SEQUENCE/rgb.txt PATH_TO_SEQUENCE/depth.txt > associ
 
 ## Acknowledgements
 Our code builds on [Panoptic-SLAM](https://github.com/iit-DLSLab/Panoptic-SLAM) and [ORB-SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3)
+
+## Supplementary data of the JEAS article (Additional files 1–5)
+
+Per-sequence data behind every table and statistic of the article, exactly as recorded from the
+`evo` output and the timing logs (ATE RMSE at four decimal places, tracking times at three), and the
+script that reproduces all reported statistics.
+
+| File | Content |
+|---|---|
+| `Additional_file_1_ate32_per_sequence.csv` | ATE RMSE (m) of the six compared methods on the 32 TUM RGB-D / Bonn RGB-D Dynamic sequences (Tables 2–6, TOST analysis) |
+| `Additional_file_2_yoso_slam_statistical_analysis.py` | Python/SciPy script: paired Wilcoxon tests with Holm adjustment, effect sizes and bootstrap CIs, TOST equivalence analysis, tracking-time tests, ablation percentages and repeated-run Mann–Whitney tests |
+| `Additional_file_3_tracking_time32_per_sequence.csv` | Mean per-frame tracking-thread latency (s) of YOSO-SLAM, Panoptic-SLAM, Mask2Former-SLAM and YDM-SLAM on the 32 sequences (Section 5.9) |
+| `Additional_file_4_ablation10_per_sequence.csv` | Ablation study: ATE RMSE and mean tracking time of the ten sequences under the six configurations of Table 10 |
+| `Additional_file_5_repeated_runs_per_run.csv` | Repeated-run experiment: ATE RMSE of each of the four runs of YOSO-SLAM, YDM-SLAM and Panoptic-SLAM on the six repeated sequences (Tables 7–8) |
+
+Reproduce every statistic of the article with:
+```
+pip install numpy pandas scipy
+python Additional_file_2_yoso_slam_statistical_analysis.py
+```
