@@ -6,3 +6,6 @@ MODEL:
 SOLVER:
   STEPS: (210000, 250000)
   MAX_ITER: 270000
+INPUT:
+  MIN_SIZE_TEST: 512 # 800  (test scale used in the JEAS article, same as YOSO and Mask2Former)
+  MAX_SIZE_TEST: 800 # 1333 (test scale used in the JEAS article, same as YOSO and Mask2Former)
