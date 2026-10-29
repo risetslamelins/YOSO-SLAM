@@ -1,73 +1,97 @@
 sequence,method,run,ATE_RMSE_m
-Walking XYZ,YOSO-SLAM,Run 1,0.0146
+Walking XYZ,YOSO-SLAM,Run 1,0.014611
 Walking XYZ,YOSO-SLAM,Run 2,0.014683
 Walking XYZ,YOSO-SLAM,Run 3,0.014416
 Walking XYZ,YOSO-SLAM,Run 4,0.014349
-Walking Halfsphere,YOSO-SLAM,Run 1,0.0268
+Walking Halfsphere,YOSO-SLAM,Run 1,0.026885
 Walking Halfsphere,YOSO-SLAM,Run 2,0.026406
 Walking Halfsphere,YOSO-SLAM,Run 3,0.024309
 Walking Halfsphere,YOSO-SLAM,Run 4,0.025784
-Synchronous,YOSO-SLAM,Run 1,0.2368
+Synchronous,YOSO-SLAM,Run 1,0.236887
 Synchronous,YOSO-SLAM,Run 2,0.269807
 Synchronous,YOSO-SLAM,Run 3,0.230639
 Synchronous,YOSO-SLAM,Run 4,0.219327
-Crowd2,YOSO-SLAM,Run 1,0.6155
-Crowd2,YOSO-SLAM,Run 2,0.634417347395279
-Crowd2,YOSO-SLAM,Run 3,0.543879773552136
-Crowd2,YOSO-SLAM,Run 4,0.641893582031344
-Balloon Tracking,YOSO-SLAM,Run 1,0.0448
-Balloon Tracking,YOSO-SLAM,Run 2,0.042607014751996
-Balloon Tracking,YOSO-SLAM,Run 3,0.0359174042112293
-Balloon Tracking,YOSO-SLAM,Run 4,0.0399005515051105
-Placing Non-Obs Box,YOSO-SLAM,Run 1,0.376
-Placing Non-Obs Box,YOSO-SLAM,Run 2,0.321133899526569
-Placing Non-Obs Box,YOSO-SLAM,Run 3,0.265023338581321
-Placing Non-Obs Box,YOSO-SLAM,Run 4,0.118298176448339
-Walking XYZ,YDM-SLAM,Run 1,0.0153
-Walking XYZ,YDM-SLAM,Run 2,0.01572
+Crowd2,YOSO-SLAM,Run 1,0.615588
+Crowd2,YOSO-SLAM,Run 2,0.634417
+Crowd2,YOSO-SLAM,Run 3,0.543880
+Crowd2,YOSO-SLAM,Run 4,0.641894
+Balloon Tracking,YOSO-SLAM,Run 1,0.044875
+Balloon Tracking,YOSO-SLAM,Run 2,0.042607
+Balloon Tracking,YOSO-SLAM,Run 3,0.035917
+Balloon Tracking,YOSO-SLAM,Run 4,0.039901
+Placing Non-Obs Box,YOSO-SLAM,Run 1,0.376044
+Placing Non-Obs Box,YOSO-SLAM,Run 2,0.321134
+Placing Non-Obs Box,YOSO-SLAM,Run 3,0.265023
+Placing Non-Obs Box,YOSO-SLAM,Run 4,0.118298
+Walking XYZ,YDM-SLAM,Run 1,0.015306
+Walking XYZ,YDM-SLAM,Run 2,0.015720
 Walking XYZ,YDM-SLAM,Run 3,0.015812
 Walking XYZ,YDM-SLAM,Run 4,0.015475
-Walking Halfsphere,YDM-SLAM,Run 1,0.0273
+Walking Halfsphere,YDM-SLAM,Run 1,0.027352
 Walking Halfsphere,YDM-SLAM,Run 2,0.021722
 Walking Halfsphere,YDM-SLAM,Run 3,0.025309
 Walking Halfsphere,YDM-SLAM,Run 4,0.025644
-Synchronous,YDM-SLAM,Run 1,0.1548
-Synchronous,YDM-SLAM,Run 2,0.155964266631923
-Synchronous,YDM-SLAM,Run 3,0.179184519162113
-Synchronous,YDM-SLAM,Run 4,0.155581788513947
-Placing Non-Obs Box,YDM-SLAM,Run 1,0.738
-Placing Non-Obs Box,YDM-SLAM,Run 2,0.767807076514717
-Placing Non-Obs Box,YDM-SLAM,Run 3,0.829577601909931
-Placing Non-Obs Box,YDM-SLAM,Run 4,0.812661852318639
-Crowd2,YDM-SLAM,Run 1,0.1036
-Crowd2,YDM-SLAM,Run 2,0.52818389693697
-Crowd2,YDM-SLAM,Run 3,0.124709936013739
-Crowd2,YDM-SLAM,Run 4,0.157093960877731
-Balloon Tracking,YDM-SLAM,Run 1,0.0416
-Balloon Tracking,YDM-SLAM,Run 2,0.041284016785457
-Balloon Tracking,YDM-SLAM,Run 3,0.066979832801533
-Balloon Tracking,YDM-SLAM,Run 4,0.0340682240011804
-Walking XYZ,Panoptic-SLAM,Run 1,0.0145
+Synchronous,YDM-SLAM,Run 1,0.154889
+Synchronous,YDM-SLAM,Run 2,0.155964
+Synchronous,YDM-SLAM,Run 3,0.179185
+Synchronous,YDM-SLAM,Run 4,0.155582
+Placing Non-Obs Box,YDM-SLAM,Run 1,0.738056
+Placing Non-Obs Box,YDM-SLAM,Run 2,0.767807
+Placing Non-Obs Box,YDM-SLAM,Run 3,0.829578
+Placing Non-Obs Box,YDM-SLAM,Run 4,0.812662
+Crowd2,YDM-SLAM,Run 1,0.103603
+Crowd2,YDM-SLAM,Run 2,0.528184
+Crowd2,YDM-SLAM,Run 3,0.124710
+Crowd2,YDM-SLAM,Run 4,0.157094
+Balloon Tracking,YDM-SLAM,Run 1,0.041607
+Balloon Tracking,YDM-SLAM,Run 2,0.041284
+Balloon Tracking,YDM-SLAM,Run 3,0.066980
+Balloon Tracking,YDM-SLAM,Run 4,0.034068
+Walking XYZ,Panoptic-SLAM,Run 1,0.014538
 Walking XYZ,Panoptic-SLAM,Run 2,0.013991
 Walking XYZ,Panoptic-SLAM,Run 3,0.014908
 Walking XYZ,Panoptic-SLAM,Run 4,0.014011
-Walking Halfsphere,Panoptic-SLAM,Run 1,0.0276
+Walking Halfsphere,Panoptic-SLAM,Run 1,0.027652
 Walking Halfsphere,Panoptic-SLAM,Run 2,0.025072
 Walking Halfsphere,Panoptic-SLAM,Run 3,0.026272
 Walking Halfsphere,Panoptic-SLAM,Run 4,0.026485
-Synchronous,Panoptic-SLAM,Run 1,0.1977
-Synchronous,Panoptic-SLAM,Run 2,0.231477557599598
-Synchronous,Panoptic-SLAM,Run 3,0.187081835784032
-Synchronous,Panoptic-SLAM,Run 4,0.218274732907496
-Placing Non-Obs Box,Panoptic-SLAM,Run 1,0.6777
-Placing Non-Obs Box,Panoptic-SLAM,Run 2,0.694698827080349
-Placing Non-Obs Box,Panoptic-SLAM,Run 3,0.796215135272779
-Placing Non-Obs Box,Panoptic-SLAM,Run 4,0.69711561354115
-Crowd2,Panoptic-SLAM,Run 1,0.6282
-Crowd2,Panoptic-SLAM,Run 2,0.596435337975101
-Crowd2,Panoptic-SLAM,Run 3,0.65435389975787
-Crowd2,Panoptic-SLAM,Run 4,0.633725503698922
-Balloon Tracking,Panoptic-SLAM,Run 1,0.0324
-Balloon Tracking,Panoptic-SLAM,Run 2,0.0369437200806384
-Balloon Tracking,Panoptic-SLAM,Run 3,0.0360954349816098
-Balloon Tracking,Panoptic-SLAM,Run 4,0.0356200169102302
+Synchronous,Panoptic-SLAM,Run 1,0.197761
+Synchronous,Panoptic-SLAM,Run 2,0.231478
+Synchronous,Panoptic-SLAM,Run 3,0.187082
+Synchronous,Panoptic-SLAM,Run 4,0.218275
+Placing Non-Obs Box,Panoptic-SLAM,Run 1,0.677736
+Placing Non-Obs Box,Panoptic-SLAM,Run 2,0.694699
+Placing Non-Obs Box,Panoptic-SLAM,Run 3,0.796215
+Placing Non-Obs Box,Panoptic-SLAM,Run 4,0.697116
+Crowd2,Panoptic-SLAM,Run 1,0.628271
+Crowd2,Panoptic-SLAM,Run 2,0.596435
+Crowd2,Panoptic-SLAM,Run 3,0.654354
+Crowd2,Panoptic-SLAM,Run 4,0.633726
+Balloon Tracking,Panoptic-SLAM,Run 1,0.032499
+Balloon Tracking,Panoptic-SLAM,Run 2,0.036944
+Balloon Tracking,Panoptic-SLAM,Run 3,0.036095
+Balloon Tracking,Panoptic-SLAM,Run 4,0.035620
+Walking XYZ,Mask2Former-SLAM,Run 1,0.015225
+Walking XYZ,Mask2Former-SLAM,Run 2,0.016216
+Walking XYZ,Mask2Former-SLAM,Run 3,0.014993
+Walking XYZ,Mask2Former-SLAM,Run 4,0.015005
+Walking Halfsphere,Mask2Former-SLAM,Run 1,0.024967
+Walking Halfsphere,Mask2Former-SLAM,Run 2,0.024289
+Walking Halfsphere,Mask2Former-SLAM,Run 3,0.024231
+Walking Halfsphere,Mask2Former-SLAM,Run 4,0.023868
+Synchronous,Mask2Former-SLAM,Run 1,0.269029
+Synchronous,Mask2Former-SLAM,Run 2,0.308269
+Synchronous,Mask2Former-SLAM,Run 3,0.316459
+Synchronous,Mask2Former-SLAM,Run 4,0.274743
+Crowd2,Mask2Former-SLAM,Run 1,0.431279
+Crowd2,Mask2Former-SLAM,Run 2,0.551120
+Crowd2,Mask2Former-SLAM,Run 3,0.538375
+Crowd2,Mask2Former-SLAM,Run 4,0.665127
+Balloon Tracking,Mask2Former-SLAM,Run 1,0.037769
+Balloon Tracking,Mask2Former-SLAM,Run 2,0.034203
+Balloon Tracking,Mask2Former-SLAM,Run 3,0.032144
+Balloon Tracking,Mask2Former-SLAM,Run 4,0.034588
+Placing Non-Obs Box,Mask2Former-SLAM,Run 1,0.562713
+Placing Non-Obs Box,Mask2Former-SLAM,Run 2,0.451013
+Placing Non-Obs Box,Mask2Former-SLAM,Run 3,0.604467
+Placing Non-Obs Box,Mask2Former-SLAM,Run 4,0.589187

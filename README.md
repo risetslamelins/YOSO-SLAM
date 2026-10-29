@@ -81,20 +81,28 @@ Our code builds on [Panoptic-SLAM](https://github.com/iit-DLSLab/Panoptic-SLAM) 
 
 ## Supplementary data of the JEAS article (Additional files 1–5)
 
-Per-sequence data behind every table and statistic of the article, exactly as recorded from the
-`evo` output and the timing logs (ATE RMSE at four decimal places, tracking times at three), and the
-script that reproduces all reported statistics.
+Per-sequence data behind the benchmark, ablation and repeated-run tables of the article (ATE RMSE at full
+precision, six decimals, recomputed with `evo`; tracking times as recorded by the timing logs, three decimals),
+and the script that reproduces the statistics of Tables 2, 3, 6–8 and 10 and of Sections 5.6, 5.9 and 5.11.
+The field-session statistics of Section 5.12 and the ORB-SLAM3/ReFusion tracking times and the initialization
+and total times of Table 9 are not covered by these files.
 
 | File | Content |
 |---|---|
-| `Additional_file_1_ate32_per_sequence.csv` | ATE RMSE (m) of the six compared methods on the 32 TUM RGB-D / Bonn RGB-D Dynamic sequences (Tables 2–6, TOST analysis) |
-| `Additional_file_2_yoso_slam_statistical_analysis.py` | Python/SciPy script: paired Wilcoxon tests with Holm adjustment, effect sizes and bootstrap CIs, TOST equivalence analysis, tracking-time tests, ablation percentages and repeated-run Mann–Whitney tests |
+| `Additional_file_1_ate32_per_sequence.csv` | Per-sequence ATE RMSE (m), 32 sequences × 6 methods, at full precision (6 decimals, the precision of the evo output), recomputed from the stored single-run trajectories with `evo_ape tum <gt> <est> -a` (Tables 2–6; Tables 4–5 show these values rounded to 4 decimals) |
+| `Additional_file_2_yoso_slam_statistical_analysis.py` | Python/SciPy script that reproduces Tables 2, 3, 6–8 and 10 of the article: paired Wilcoxon tests with Holm adjustment, effect sizes and bootstrap CIs, global mean, SD, median, minimum and maximum ATE, TOST equivalence analysis with its sensitivity checks (t-based CI, TOST on the log ATE ratio, single-sequence differences beyond the margin), tracking-time tests (with the exact sign-flip p-value), ablation percentages, repeated-run Mann–Whitney tests and the replicated YOSO–Mask2Former equivalence analysis (absolute margin and ATE ratio) |
 | `Additional_file_3_tracking_time32_per_sequence.csv` | Mean per-frame tracking-thread latency (s) of YOSO-SLAM, Panoptic-SLAM, Mask2Former-SLAM and YDM-SLAM on the 32 sequences (Section 5.9) |
-| `Additional_file_4_ablation10_per_sequence.csv` | Ablation study: ATE RMSE and mean tracking time of the ten sequences under the six configurations of Table 10 |
-| `Additional_file_5_repeated_runs_per_run.csv` | Repeated-run experiment: ATE RMSE of each of the four runs of YOSO-SLAM, YDM-SLAM and Panoptic-SLAM on the six repeated sequences (Tables 7–8) |
+| `Additional_file_4_ablation10_per_sequence.csv` | Ablation study: ATE RMSE (m, full precision, six decimals, recomputed with `evo_ape tum <gt> <est> -a` from the stored trajectories of the ablation runs; V0, Panoptic-SLAM and the full pipeline are the single runs of Additional file 1) and mean tracking time of the ten sequences under the six configurations of Table 10 |
+| `Additional_file_5_repeated_runs_per_run.csv` | Repeated-run experiment: ATE RMSE of each of the four runs of YOSO-SLAM, Mask2Former-SLAM, YDM-SLAM and Panoptic-SLAM on the six repeated sequences (Tables 7–8); Run 1 is the single run of Tables 4–5 |
 
-Reproduce every statistic of the article with:
+Reproduce these statistics with:
 ```
 pip install numpy pandas scipy
 python Additional_file_2_yoso_slam_statistical_analysis.py
 ```
+
+### Settings used for the results of the JEAS article
+- Test scale 512/800 (640 × 480 frames resized to 683 × 512) for all three panoptic front-ends: `config/YOSO/Base-YOSO.yaml`, `config/Mask2Former/Base-Mask2Former.yaml` and `config/PanopticFPN/panoptic_fpn_R_50_3x.yaml`.
+- Panoptic post-processing of YOSO and Mask2Former: `OBJECT_MASK_THRESHOLD: 0.5` and `OVERLAP_THRESHOLD: 0.5` (`config/YOSO/yoso_r50.yaml`, `config/Mask2Former/mask2former_r50.yaml`); PanopticFPN confidence thresholds of 0.5, set in `src/python/inference.py` as in Panoptic-SLAM.
+- Epipolar filter (Layer 2, unchanged from Panoptic-SLAM, `src/Tracking.cc`): fundamental matrix estimated by RANSAC from Stuff keypoints (inlier threshold 0.1 px, confidence 0.99, only when more than 40 Stuff matches are found); epipolar-distance threshold τ = 0.1 px.
+- Timing: the reported tracking times of the panoptic methods include the per-frame Detectron2 visualization drawn by `VisualizationDemo.run_on_image` (`src/python/predictor.py`) inside the timed call.
