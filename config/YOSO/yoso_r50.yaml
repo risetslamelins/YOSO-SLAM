@@ -33,6 +33,6 @@ MODEL:
       SEMANTIC_ON: False
       INSTANCE_ON: False
       PANOPTIC_ON: True
-      OVERLAP_THRESHOLD: 0.8
+      OVERLAP_THRESHOLD: 0.5 # 0.8 (released default); 0.5 as used in the JEAS article, same as Mask2Former
       OBJECT_MASK_THRESHOLD: 0.5
 OUTPUT_DIR: "output/yoso_resnet50_panoptic_seg_coco"
